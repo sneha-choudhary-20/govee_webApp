@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.banner {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner i {
+    font-size: 18px;
+    color: black;
+}
+
+.banner span {
+    font-size: 14px;
+}
+
+.banner div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Carousel Styles */
+#customCarousel .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#customCarousel .carousel-control-prev-icon,
+#customCarousel .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Mobile View Adjustments for Carousel */
+@media (max-width: 768px) {
+    #customCarousel .carousel-item img {
+        height: 300px;
+    }
+
+    #customCarousel .carousel-control-prev,
+    #customCarousel .carousel-control-next {
+        width: 10%;
+    }
+}
+
+/* Shop Now Button */
+.shop-now-btn {
+    background-color: #d6d6d6;
+    color: black;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.shop-now-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.shop-now-btn:focus {
+    outline: none;
+}
+
+.shop-now-btn:active {
+    opacity: 0.8;
+}
+
+/* Product Card Styles */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    height: 300px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    filter: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+}
+
+footer .fab {
+    font-size: 18px;
+    color: white;
+}
+
+footer .fab:hover {
+    color: #007bff;
+}
+
+footer .text-end {
+    text-align: right;
+}
+
+footer .text-end .list-unstyled {
+    display: inline-flex;
+    padding-left: 0;
+}
+
+footer .text-end .list-unstyled li {
+    margin-right: 20px;
+}
+
+/* Mobile View Adjustments for Footer */
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    footer h5 {
+        font-size: 16px;
+    }
+
+    footer .text-end {
+        text-align: left;
+    }
+
+    footer .text-end .list-unstyled {
+        display: block;
+        text-align: left;
+    }
+
+    footer .text-end .list-unstyled li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Testimonials Section */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.testimonial-card {
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card h5 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .customer-name {
+    color: #007bff; 
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Mobile View Adjustments for Testimonials */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Enable hover effects for mobile */
+    .testimonial-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Language Dropdown */
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    position: absolute; 
+    left: 0; 
+    right: auto; 
+    max-width: 150px; 
+    width: 100%; 
+    z-index: 1050; 
+    padding: 8px 0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+.dropdown-item {
+    font-size: 14px;
+    padding: 5px 10px; 
+    white-space: nowrap; 
+}
+
+/* Ensure dropdown fits inside the carousel container */
+.carousel {
+    position: relative;
+    overflow: hidden; /* Keep elements inside the carousel */
+}
+
+/* Globe Button Adjustments */
+.btn-outline-secondary {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        max-width: 100%; /* Full width on small screens */
+        left: auto; /* Center align dropdown */
+        right: auto;
+    }
+}

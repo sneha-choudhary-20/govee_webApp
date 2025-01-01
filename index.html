@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Govee Lights</title>
+  <!-- bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- font awesome icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Banner Section -->
+  <section class="banner py-2 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="text-center">
+        <i class="fas fa-truck fa-lg me-2 text-dark"></i>
+        <span>Fast Free Shipping</span>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-money-bill-alt fa-lg me-2 text-dark"></i>
+        <span>30 Day Money Back Guarantee</span>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-headset fa-lg me-2 text-dark"></i>
+        <span>Lifetime Customer Support</span>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-info-circle fa-lg me-2 text-dark"></i>
+        <span>Recall Information</span>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-graduation-cap fa-lg me-2 text-dark"></i>
+        <span>Education Discount</span>
+      </div>
+    </div>
+  </section>
+  <!--// Banner Section -->
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Govee Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">SMART LIGHTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SMART APPLIANCES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SUPPORT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">COMMUNITY</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-outline-secondary me-2"><i class="fas fa-search"></i></button>
+          <button class="btn btn-outline-secondary me-2"><i class="fas fa-user"></i></button>
+          <button class="btn btn-outline-secondary me-2"><i class="fas fa-shopping-cart"></i></button>
+          
+<!-- Language Dropdown -->
+<div class="dropdown">
+  <button
+    class="btn btn-outline-secondary dropdown-toggle"
+    type="button"
+    id="languageDropdown"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <i class="fas fa-globe"></i>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+    <li>
+      <a class="dropdown-item" href="#">
+        <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="flag-icon"> United States
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">
+        <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="flag-icon"> United Kingdom
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item" href="#">
+        <img src="https://flagcdn.com/w40/ca.png" alt="Canada Flag" class="flag-icon"> Canada
+      </a>
+    </li>
+  </ul>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--// Navigation Bar -->
+
+ <!-- Carousel -->
+<div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="images/slider1.jpg" class="d-block w-100 img-fluid" alt="Carousel Image 1">
+      </div>
+      <div class="carousel-item">
+          <img src="images/slider2.jpg" class="d-block w-100 img-fluid" alt="Carousel Image 2">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+ <!--// Carousel -->
+
+
+<!-- Product Section -->
+<section id="products" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="card rounded shadow h-100 product-card">
+          <img src="images/prod_1.jpg" class="card-img-top product-img" alt="Govee RGB Lights">
+          <div class="card-body">
+            <h5 class="card-title">Govee RGB Lights</h5>
+            <p class="card-text"><s>$50</s> <span class="text-danger">$40</span></p>
+            <div class="product-info">
+              <p><strong>Description:</strong> The Govee RGB Lights are designed to bring vibrant colors to your home with dynamic lighting effects. Perfect for parties, gaming rooms, or creating the ideal ambiance in any room of your house.</p>
+              <p><strong>Features:</strong></p>
+              <ul>
+                <li>Color-changing RGB lights</li>
+                <li>Remote control with multiple modes</li>
+                <li>Easy setup and installation</li>
+                <li>Energy-efficient LED technology</li>
+              </ul>
+            </div>
+            <button class="shop-now-btn" onclick="addToCart('Govee RGB Lights', 50, 40)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="card rounded shadow h-100 product-card">
+          <img src="images/prod_2.jpg" class="card-img-top product-img" alt="Smart LED Bulbs">
+          <div class="card-body">
+            <h5 class="card-title">Smart LED Bulbs</h5>
+            <p class="card-text"><s>$30</s> <span class="text-danger">$20</span></p>
+            <div class="product-info">
+              <p><strong>Description:</strong> The Smart LED Bulbs offer great energy savings and smart control features, including voice commands and scheduling. Brighten your room with vibrant LED colors.</p>
+              <p><strong>Features:</strong></p>
+              <ul>
+                <li>Voice control with Alexa/Google Home</li>
+                <li>Customizable colors and brightness</li>
+                <li>Easy app setup and remote control</li>
+              </ul>
+            </div>
+            <button class="shop-now-btn" onclick="addToCart('Smart LED Bulbs', 30, 20)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="card rounded shadow h-100 product-card">
+          <img src="images/prod_3.jpg" class="card-img-top product-img" alt="Home Decor Lights">
+          <div class="card-body">
+            <h5 class="card-title">Home Decor Lights</h5>
+            <p class="card-text"><s>$70</s> <span class="text-danger">$60</span></p>
+            <div class="product-info">
+              <p><strong>Description:</strong> Home Decor Lights add an elegant touch to any space with their soft and warm lighting. They create a cozy environment perfect for relaxation.</p>
+              <p><strong>Features:</strong></p>
+              <ul>
+                <li>Soft, warm light ideal for ambiance</li>
+                <li>Available in various sizes and designs</li>
+                <li>Low power consumption</li>
+              </ul>
+            </div>
+            <button class="shop-now-btn" onclick="addToCart('Home Decor Lights', 70, 60)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4">
+        <div class="card rounded shadow h-100 product-card">
+          <img src="images/prod_4.jpg" class="card-img-top product-img" alt="Outdoor LED Lights">
+          <div class="card-body">
+            <h5 class="card-title">Outdoor LED Lights</h5>
+            <p class="card-text"><s>$80</s> <span class="text-danger">$65</span></p>
+            <div class="product-info">
+              <p><strong>Description:</strong> The Outdoor LED Lights are designed to illuminate your garden or patio with weather-resistant and energy-efficient technology.</p>
+              <p><strong>Features:</strong></p>
+              <ul>
+                <li>Weather-resistant for outdoor use</li>
+                <li>Energy-efficient LED bulbs</li>
+                <li>Available in warm and cool light options</li>
+              </ul>
+            </div>
+            <button class="shop-now-btn" onclick="addToCart('Outdoor LED Lights', 80, 65)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4">
+        <div class="card rounded shadow h-100 product-card">
+          <img src="images/prod_5.jpg" class="card-img-top product-img" alt="Smart Table Lamp">
+          <div class="card-body">
+            <h5 class="card-title">Smart Table Lamp</h5>
+            <p class="card-text"><s>$40</s> <span class="text-danger">$35</span></p>
+            <div class="product-info">
+              <p><strong>Description:</strong> The Smart Table Lamp offers both modern style and practicality with customizable light settings and smart controls.</p>
+              <p><strong>Features:</strong></p>
+              <ul>
+                <li>Adjustable brightness and color temperature</li>
+                <li>Touch controls and remote operation</li>
+                <li>Stylish and modern design</li>
+              </ul>
+            </div>
+            <button class="shop-now-btn" onclick="addToCart('Smart Table Lamp', 40, 35)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4">
+        <div class="card rounded shadow h-100 product-card">
+          <img src="images/prod_6.jpg" class="card-img-top product-img" alt="Ceiling LED Light">
+          <div class="card-body">
+            <h5 class="card-title">Ceiling LED Light</h5>
+            <p class="card-text"><s>$90</s> <span class="text-danger">$75</span></p>
+            <div class="product-info">
+              <p><strong>Description:</strong> The Ceiling LED Light provides bright and uniform lighting for large rooms, offering excellent energy efficiency.</p>
+              <p><strong>Features:</strong></p>
+              <ul>
+                <li>Energy-efficient LED technology</li>
+                <li>Wide coverage for larger rooms</li>
+                <li>Simple installation and maintenance</li>
+              </ul>
+            </div>
+            <button class="shop-now-btn" onclick="addToCart('Ceiling LED Light', 90,75)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--// Product Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="testimonial-container">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="card text-center">
+              <div class="card-body">
+                <p>"Great product and amazing support!"</p>
+                <div class="customer-name">- Jane Doe</div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="card text-center">
+              <div class="card-body">
+                <p>"Totally worth it! Brightens up my room beautifully."</p>
+                <div class="customer-name">- John Smith</div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="card text-center">
+              <div class="card-body">
+                <p>"Stylish and functional. Absolutely love it!"</p>
+                <div class="customer-name">- Emily Johnson</div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <div class="card text-center">
+              <div class="card-body">
+                <p>"The best lighting I've ever bought, highly recommend!"</p>
+                <div class="customer-name">- Michael Lee</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--// Testimonials Section -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>GET $5 OFF ON YOUR FIRST ORDER</h5>
+          <form>
+            <input type="email" class="form-control mb-2" placeholder="Email">
+            <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white text-decoration-none">Contact Us</a></li>
+            <li><a class="text-white text-decoration-none">FAQ</a></li>
+            <li><a class="text-white text-decoration-none">Shipping</a></li>
+            <li><a class="text-white text-decoration-none">Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Explore</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white text-decoration-none">About Us</a></li>
+            <li><a class="text-white text-decoration-none">Careers</a></li>
+            <li><a class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a class="text-white text-decoration-none">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>&copy; 2024 Govee Lights. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <ul class="list-unstyled d-inline-flex">
+            <li><a class="text-white me-3"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="text-white me-3"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="text-white me-3"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="text-white"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!--// Footer -->
+  <script src="script.js"></script>
+   <!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
